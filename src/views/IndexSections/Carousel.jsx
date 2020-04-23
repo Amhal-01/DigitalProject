@@ -33,8 +33,17 @@ class Carousel extends React.Component {
           <Container className="py-md">
             <Row className="justify-content-between align-items-center">
               <Col className="mb-5 mb-lg-0" lg="5">
-                <h1 className="text-white font-weight-light">Title</h1>
-                <p className="lead text-white mt-4">Description</p>
+                <h1 className="text-white font-weight-light">
+                  Understanding / Using eCommerce Marketing & Technology
+                </h1>
+                <p className="lead text-white mt-4">
+                  This course will focus on the principles of E-Commerce
+                  Management as it pertains to digital marketing professionals
+                  looking to expand their clients’ retail offerings beyond the
+                  limitations of physical locations. Understanding the
+                  technology and how it relates to overall business models will
+                  be a fundamental aspect of the learnings found in this course.
+                </p>
               </Col>
               <Col className="mb-lg-auto" lg="6">
                 <div className="rounded shadow-lg overflow-hidden transform-perspective-right">

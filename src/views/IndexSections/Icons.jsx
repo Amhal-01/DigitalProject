@@ -32,28 +32,26 @@ class Icons extends React.Component {
               </Col>
             </Row>
             <div className="blur--hover">
-              <a href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/icons?ref=adsr-landing-page">
-                <div className="icons-container blur-item mt-5 on-screen">
-                  <i className="icon ni ni-diamond" />
-                  <i className="icon icon-sm ni ni-vector" />
-                  <i className="icon icon-sm ni ni-app" />
-                  <i className="icon icon-sm ni ni-atom" />
-                  <i className="icon ni ni-bag-17" />
-                  <i className="icon ni ni-bell-55" />
-                  <i className="icon ni ni-credit-card" />
-                  <i className="icon icon-sm ni ni-briefcase-24" />
-                  <i className="icon icon-sm ni ni-building" />
-                  <i className="icon icon-sm ni ni-button-play" />
-                  <i className="icon ni ni-calendar-grid-58" />
-                  <i className="icon ni ni-camera-compact" />
-                  <i className="icon ni ni-chart-bar-32" />
-                </div>
-                <span className="blur-hidden h5 text-success">
-                  <i>
-                    Almost 30 regular customers, their icons are just symbolics.
-                  </i>
-                </span>
-              </a>
+              <div className="icons-container blur-item mt-5 on-screen">
+                <i className="icon ni ni-diamond" />
+                <i className="icon icon-sm ni ni-vector" />
+                <i className="icon icon-sm ni ni-app" />
+                <i className="icon icon-sm ni ni-atom" />
+                <i className="icon ni ni-bag-17" />
+                <i className="icon ni ni-bell-55" />
+                <i className="icon ni ni-credit-card" />
+                <i className="icon icon-sm ni ni-briefcase-24" />
+                <i className="icon icon-sm ni ni-building" />
+                <i className="icon icon-sm ni ni-button-play" />
+                <i className="icon ni ni-calendar-grid-58" />
+                <i className="icon ni ni-camera-compact" />
+                <i className="icon ni ni-chart-bar-32" />
+              </div>
+              <span className="blur-hidden h5 text-success">
+                <i>
+                  Almost 30 regular customers, their icons are just symbolics.
+                </i>
+              </span>
             </div>
           </Container>
         </section>

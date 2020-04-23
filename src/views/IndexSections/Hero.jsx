@@ -27,17 +27,24 @@ class Hero extends React.Component {
                     <img
                       alt="..."
                       className="img-fluid"
-                      src={require("assets/img/brand/argon-react-white.png")}
+                      src={require("assets/img/brand/react-white.png")}
                       style={{
                         width: "200px",
                       }}
                     />{" "}
-                    <p className="lead text-white">
-                      دورة ايباي، لبيع المنتجات رقمية{" "}
-                    </p>{" "}
+                    <h4 className="lead text-white">
+                      Gain Insight from Experts
+                    </h4>{" "}
                     <div className="btn-wrapper mt-5">
                       <p className="lead text-light">
-                        Fed My Ebay is here for you.{" "}
+                        The best eCommerce course has well-trained professionals
+                        with many years of experience in this field. They will
+                        share their experiences and the best solutions during
+                        their struggle to developing a business online. These
+                        insights can be your inspiration as well as provide you
+                        with an idea when you create your own business online.
+                        They can also give you sound advice about
+                        entrepreneurship idea.
                       </p>{" "}
                     </div>{" "}
                     <div className="mt-5"></div>{" "}

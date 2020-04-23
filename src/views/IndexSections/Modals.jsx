@@ -1,24 +1,22 @@
 import React from "react";
-import {
-  Button,
-  Modal,
-  Row,
-  Col
-} from "reactstrap";
+import { Button, Modal, Row, Col } from "reactstrap";
 
 class Modals extends React.Component {
   state = {};
-  toggleModal = state => {
+  toggleModal = (state) => {
     this.setState({
-      [state]: !this.state[state]
+      [state]: !this.state[state],
     });
   };
   render() {
     return (
       <>
         <h2 className="mt-lg mb-5">
-          <span>Subscription details</span>
+          <span>Subscription</span>
         </h2>
+        <small>
+          <b>Only Paypal is accepted</b>
+        </small>
         <Row>
           <Col md="4">
             <Button
@@ -28,16 +26,18 @@ class Modals extends React.Component {
               type="button"
               onClick={() => this.toggleModal("defaultModal")}
             >
-              Business
+              Fast learn
             </Button>
+            <h4 className="text-center">35$/Week</h4>
+            <h6 className="text-center">Total amount: 280$</h6>
             <Modal
-              className="modal-dialog-centered"
+              className="modal-dialog-centered  modal-success"
               isOpen={this.state.defaultModal}
               toggle={() => this.toggleModal("defaultModal")}
             >
               <div className="modal-header">
                 <h6 className="modal-title" id="modal-title-default">
-                  Type your modal title
+                  Fast career only 4 weeks training
                 </h6>
                 <button
                   aria-label="Close"
@@ -51,27 +51,13 @@ class Modals extends React.Component {
               </div>
               <div className="modal-body">
                 <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                  Separated they live in Bookmarksgrove right at the coast of
-                  the Semantics, a large language ocean.
+                  <ul>
+                    <li>Over The Shoulder Store Setup Training.</li>
+                    <li>Full Product Research Training Using My Methods.</li>
+                    <li>Complete Facebook & Instagram Traffic Training. </li>
+                    <li>Complete Email Marketing Setup & Training.</li>
+                  </ul>
                 </p>
-                <p>
-                  A small river named Duden flows by their place and supplies it
-                  with the necessary regelialia. It is a paradisematic country,
-                  in which roasted parts of sentences fly into your mouth.
-                </p>
-              </div>
-              <div className="modal-footer">
-                <Button
-                  className="ml-auto"
-                  color="link"
-                  data-dismiss="modal"
-                  type="button"
-                  onClick={() => this.toggleModal("defaultModal")}
-                >
-                  Close
-                </Button>
               </div>
             </Modal>
           </Col>
@@ -81,55 +67,48 @@ class Modals extends React.Component {
               className="mb-3"
               color="primary"
               type="button"
-              onClick={() => this.toggleModal("defaultModal")}
+              onClick={() => this.toggleModal("defaultModal_business")}
             >
-              Professional
+              Business
             </Button>
+            <h4 className="text-center">30.00$/Week</h4>
+            <h6 className="text-center">Total amount: 420.00$</h6>
             <Modal
-              className="modal-dialog-centered"
-              isOpen={this.state.defaultModal}
-              toggle={() => this.toggleModal("defaultModal")}
+              className="modal-dialog-centered modal-info"
+              isOpen={this.state.defaultModal_business}
+              toggle={() => this.toggleModal("defaultModal_business")}
             >
               <div className="modal-header">
                 <h6 className="modal-title" id="modal-title-default">
-                  Type your modal title
+                  Business Career
                 </h6>
                 <button
                   aria-label="Close"
                   className="close"
                   data-dismiss="modal"
                   type="button"
-                  onClick={() => this.toggleModal("defaultModal")}
+                  onClick={() => this.toggleModal("defaultModal_business")}
                 >
                   <span aria-hidden={true}>×</span>
                 </button>
               </div>
               <div className="modal-body">
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                  Separated they live in Bookmarksgrove right at the coast of
-                  the Semantics, a large language ocean.
-                </p>
-                <p>
-                  A small river named Duden flows by their place and supplies it
-                  with the necessary regelialia. It is a paradisematic country,
-                  in which roasted parts of sentences fly into your mouth.
-                </p>
-              </div>
-              <div className="modal-footer">
-                <Button
-                  className="ml-auto"
-                  color="link"
-                  data-dismiss="modal"
-                  type="button"
-                  onClick={() => this.toggleModal("defaultModal")}
-                >
-                  Close
-                </Button>
+                <ul>
+                  <li>Over The Shoulder Store Setup Training.</li>
+                  <li>Full Product Research Training Using My Methods. </li>
+                  <li>Complete Facebook & Instagram Traffic Training. </li>
+                  <li>Complete Email Marketing Setup & Training.</li>
+                  <li>Google SEO Traffic Mastery Training.</li>
+                  <li>ChatBot Academy To Explode Your Online Sales. </li>
+                  <li>Weekly Videos Including Q&A Sessions</li>
+                  <li>Module With My Super Secret Videos Inside.</li>
+                  <li>Private Inner Circle With Me & Other Members.</li>
+                  <li>Instant Access & Lifetime Updates</li>
+                </ul>
               </div>
             </Modal>
           </Col>
+
           <Col md="4">
             <Button
               block
@@ -140,6 +119,8 @@ class Modals extends React.Component {
             >
               Premium
             </Button>
+            <h4 className="text-center">20.00$/Week</h4>
+            <h6 className="text-center">Total amount: 1000.00$</h6>
             <Modal
               className="modal-dialog-centered modal-danger"
               contentClassName="bg-gradient-danger"
@@ -161,18 +142,38 @@ class Modals extends React.Component {
                 </button>
               </div>
               <div className="modal-body">
-                <div className="py-3 text-center">
+                <div className="py-3 text">
                   <i className="ni ni-bell-55 ni-3x" />
                   <h4 className="heading mt-4">You should read this!</h4>
-                  <p>
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia.
-                  </p>
+                  <ul>
+                    <li>Over The Shoulder Store Setup Training. </li>
+                    <li>Full Product Research Training Using My Methods.</li>
+                    <li>Complete Facebook & Instagram Traffic Training. </li>
+                    <li>Complete Email Marketing Setup & Training.</li>
+                    <li>Google SEO Traffic Mastery Training. </li>
+                    <li>ChatBot Academy To Explode Your Online Sales. </li>
+                    <li>
+                      Weekly Videos Including Q&A Sessions Module With My Super
+                      Secret Videos Inside.
+                    </li>
+                    <li>Private Inner Circle With Me & Other Members.</li>
+                    <li>Instant Access & Lifetime Updates </li>
+                    <li>
+                      <b>
+                        <i>Ultimate Pack Includes These Extras!</i>
+                      </b>
+                    </li>
+                    <li>Complete Step By Step Sales Funnel Academy!</li>
+                    <li>Complete Google Shopping Ads Academy!</li>
+                    <li>Done For You Complete 7 Figure Funnel!</li>
+                    <li>BOOK: My Top Selling 6 Figure Products!</li>
+                    <li>BOOK: My Top Selling Niches Of All Time!</li>
+                  </ul>
                 </div>
               </div>
               <div className="modal-footer">
                 <Button className="btn-white" color="default" type="button">
-                  Ok, Got it
+                  Go for it !
                 </Button>
                 <Button
                   className="text-white ml-auto"
