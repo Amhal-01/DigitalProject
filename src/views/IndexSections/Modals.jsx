@@ -17,6 +17,52 @@ class Modals extends React.Component {
         <small>
           <b>Only Paypal is accepted</b>
         </small>
+        <form
+          action="https://www.paypal.com/cgi-bin/webscr"
+          method="post"
+          target="_top"
+        >
+          <input type="hidden" name="cmd" value="_s-xclick" />
+          <input type="hidden" name="hosted_button_id" value="AZU8EMRST9VSW" />
+          <table>
+            <tr>
+              <td>
+                <input type="hidden" name="on0" value="" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <select name="os0">
+                  <option value="Fast learn">
+                    Fast learn : $35.00 USD - hebdomadaire
+                  </option>
+                  <option value="Business">
+                    Business : $30.00 USD - hebdomadaire
+                  </option>
+                  <option value="Premium">
+                    Premium : $20.00 USD - hebdomadaire
+                  </option>
+                </select>{" "}
+              </td>
+            </tr>
+          </table>
+          <input type="hidden" name="currency_code" value="USD" />
+          <input
+            type="image"
+            src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif"
+            border="0"
+            name="submit"
+            alt="PayPal - The safer, easier way to pay online!"
+          />
+          <img
+            alt=""
+            border="0"
+            src="https://www.paypalobjects.com/fr_XC/i/scr/pixel.gif"
+            width="1"
+            height="1"
+          />
+        </form>
+
         <Row>
           <Col md="4">
             <Button
