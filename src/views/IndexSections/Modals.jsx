@@ -49,7 +49,7 @@ class Modals extends React.Component {
           <input type="hidden" name="currency_code" value="USD" />
           <input
             type="image"
-            src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif"
+            src="https://www.paypalobjects.com/en_US/FR/i/btn/btn_subscribeCC_LG.gif"
             border="0"
             name="submit"
             alt="PayPal - The safer, easier way to pay online!"
